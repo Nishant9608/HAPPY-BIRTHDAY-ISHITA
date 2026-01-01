@@ -1658,3 +1658,46 @@ h1 {
 }
 
 /* Agregar más estilos según sea necesario */
+/* ================= FINAL WHITE TULIP OVERRIDES ================= */
+/* Paste this AT THE VERY END of your existing ~1000-line CSS file */
+
+/* Remove daisy center */
+.flower__white-circle,
+.flower__white-circle::after {
+  display: none !important;
+}
+
+/* White tulip petals */
+.flower__leaf {
+  width: 6vmin !important;
+  height: 14vmin !important;
+  background: linear-gradient(to top, #eaeaea, #ffffff) !important;
+  border-radius: 0 0 50% 50% !important;
+  transform-origin: bottom center !important;
+  opacity: 0.96 !important;
+  box-shadow: inset 0 -1vmin 1.5vmin rgba(255,255,255,0.6) !important;
+}
+
+/* Close petals for tulip look */
+.flower__leaf--1 {
+  transform: translate(-30%, 0%) rotateY(25deg) !important;
+}
+
+.flower__leaf--2 {
+  transform: translate(-50%, -3%) rotateX(10deg) !important;
+}
+
+.flower__leaf--3 {
+  transform: translate(-70%, 0%) rotateY(-25deg) !important;
+}
+
+/* Optional: hide extra petal if present */
+.flower__leaf--4 {
+  display: none !important;
+}
+
+/* Soft white glow */
+.flower__leafs::after {
+  background-color: rgba(255,255,255,0.3) !important;
+  filter: blur(8vmin) !important;
+}
